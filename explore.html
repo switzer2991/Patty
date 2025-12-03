@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Patterns - Craft Pattern Finder</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">✂️ Craft Pattern Finder</a>
+            <div class="nav-links">
+                <a href="explore.html" class="active">Explore</a>
+                <a href="index.html">Search</a>
+                <a href="#" class="btn-secondary">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="knitting">Knitting</button>
+                <button class="filter-btn" data-filter="crochet">Crochet</button>
+                <button class="filter-btn" data-filter="sewing">Sewing</button>
+            </div>
+            <div class="sort-dropdown">
+                <select id="sortSelect">
+                    <option value="popular">Most Popular</option>
+                    <option value="recent">Recently Added</option>
+                    <option value="easy">Easiest First</option>
+                    <option value="advanced">Most Challenging</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masonry Grid -->
+    <section class="patterns-section">
+        <div class="container">
+            <div class="masonry-grid" id="patternsGrid">
+                <!-- Pattern cards will be inserted here by JavaScript -->
+            </div>
+            <div class="load-more">
+                <button class="btn-primary" id="loadMoreBtn">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Craft Pattern Finder. Made with 💕 for makers.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/explore.js"></script>
+</body>
+</html>
