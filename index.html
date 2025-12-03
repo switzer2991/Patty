@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Pattern Finder - Find Your Perfect Pattern</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">✂️ Craft Pattern Finder</a>
+            <div class="nav-links">
+                <a href="explore.html">Explore</a>
+                <a href="index.html">Search</a>
+                <a href="#" class="btn-secondary">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find the Perfect Pattern for Any Garment</h1>
+            <p class="hero-subtitle">Upload a photo and discover sewing, knitting, and crochet patterns that match your style</p>
+            
+            <!-- Upload Area -->
+            <div class="upload-container">
+                <div class="upload-box" id="uploadBox">
+                    <div class="upload-icon">📸</div>
+                    <h3>Upload an Image</h3>
+                    <p>Drag and drop or click to browse</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <button class="btn-primary" onclick="document.getElementById('fileInput').click()">
+                        Choose Image
+                    </button>
+                </div>
+                
+                <div class="preview-container" id="previewContainer" style="display: none;">
+                    <img id="previewImage" src="" alt="Preview">
+                    <button class="btn-primary" id="searchButton">Search for Patterns</button>
+                    <button class="btn-secondary" id="cancelButton">Cancel</button>
+                </div>
+            </div>
+
+            <!-- Quick Categories -->
+            <div class="quick-categories">
+                <h3>or browse by category</h3>
+                <div class="category-grid">
+                    <a href="explore.html?category=sweaters" class="category-card">
+                        <span class="category-icon">🧶</span>
+                        <span>Sweaters</span>
+                    </a>
+                    <a href="explore.html?category=dresses" class="category-card">
+                        <span class="category-icon">👗</span>
+                        <span>Dresses</span>
+                    </a>
+                    <a href="explore.html?category=accessories" class="category-card">
+                        <span class="category-icon">🧣</span>
+                        <span>Accessories</span>
+                    </a>
+                    <a href="explore.html?category=tops" class="category-card">
+                        <span class="category-icon">👚</span>
+                        <span>Tops</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">1</div>
+                    <h3>Upload Your Image</h3>
+                    <p>Take a photo or upload an image of the garment you want to recreate</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">2</div>
+                    <h3>AI Finds Matches</h3>
+                    <p>Our system analyzes style, color, and construction to find similar patterns</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">3</div>
+                    <h3>Start Creating</h3>
+                    <p>Choose your favorite pattern and begin your handmade project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Craft Pattern Finder. Made with 💕 for makers.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
