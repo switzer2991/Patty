@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Details - Craft Pattern Finder</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">✂️ Craft Pattern Finder</a>
+            <div class="nav-links">
+                <a href="explore.html">Explore</a>
+                <a href="index.html">Search</a>
+                <a href="#" class="btn-secondary">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pattern Details -->
+    <section class="pattern-detail">
+        <div class="container">
+            <button class="back-btn" onclick="history.back()">← Back to Results</button>
+            
+            <div class="detail-grid">
+                <!-- Image Gallery -->
+                <div class="image-gallery">
+                    <div class="main-image">
+                        <img id="mainImage" src="https://via.placeholder.com/600x800/FFB6C1/FFFFFF?text=Pattern+Image" alt="Pattern">
+                    </div>
+                    <div class="thumbnail-strip">
+                        <img src="https://via.placeholder.com/150x200/FFB6C1/FFFFFF?text=View+1" alt="View 1" class="thumbnail active">
+                        <img src="https://via.placeholder.com/150x200/C0C0C0/FFFFFF?text=View+2" alt="View 2" class="thumbnail">
+                        <img src="https://via.placeholder.com/150x200/FFB6C1/FFFFFF?text=View+3" alt="View 3" class="thumbnail">
+                    </div>
+                </div>
+
+                <!-- Pattern Info -->
+                <div class="pattern-info">
+                    <h1 id="patternTitle">Cozy Knit Sweater Pattern</h1>
+                    
+                    <div class="pattern-meta">
+                        <span class="craft-type">🧶 Knitting</span>
+                        <span class="difficulty beginner">Beginner</span>
+                        <span class="rating">⭐ 4.8 (156 reviews)</span>
+                    </div>
+
+                    <p class="pattern-description" id="patternDescription">
+                        This beautiful oversized sweater features a relaxed fit and ribbed detailing. 
+                        Perfect for cozy autumn days, this pattern includes detailed instructions for 
+                        sizes XS through XXL. The design uses simple stockinette stitch with ribbed 
+                        edges, making it perfect for confident beginners.
+                    </p>
+
+                    <div class="pattern-stats">
+                        <div class="stat">
+                            <div class="stat-label">Time</div>
+                            <div class="stat-value">20-30 hours</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Skill Level</div>
+                            <div class="stat-value">Beginner</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Sizes</div>
+                            <div class="stat-value">XS - XXL</div>
+                        </div>
+                    </div>
+
+                    <div class="materials">
+                        <h3>Materials Needed</h3>
+                        <ul id="materialsList">
+                            <li>800-1200 yards of worsted weight yarn</li>
+                            <li>US Size 8 (5mm) circular needles</li>
+                            <li>US Size 6 (4mm) circular needles for ribbing</li>
+                            <li>Stitch markers</li>
+                            <li>Tapestry needle</li>
+                        </ul>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-primary large">Get Pattern - $8.99</button>
+                        <button class="btn-secondary large">Save for Later</button>
+                    </div>
+
+                    <div class="pattern-tags">
+                        <span class="tag">sweater</span>
+                        <span class="tag">oversized</span>
+                        <span class="tag">beginner-friendly</span>
+                        <span class="tag">fall fashion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar Patterns -->
+    <section class="similar-patterns">
+        <div class="container">
+            <h2>Similar Patterns You Might Like</h2>
+            <div class="similar-grid" id="similarGrid">
+                <!-- Similar patterns will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Craft Pattern Finder. Made with 💕 for makers.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/pattern-detail.js"></script>
+</body>
+</html>
